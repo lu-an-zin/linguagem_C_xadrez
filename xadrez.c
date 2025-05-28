@@ -2,9 +2,12 @@
 
 int main()
 {
-  int torre = 1;
-  int bispo = 1;
-  int rainha = 1;
+
+    int vertical= 0;
+    int horizontal = 2;
+    int torre = 1;
+    int bispo = 1;
+    int rainha = 1;
    // movimentação da torre
     printf("***Movimentação da torre***\n");
     for(torre ; torre <=5; torre++){
@@ -25,5 +28,15 @@ int main()
         printf("Esquerda\n");
         rainha ++;
     }while(rainha <= 8 );
+    
+    // movimento do cavalo
+    for (horizontal; horizontal <= 2; horizontal++)
+    {
+        for(vertical; vertical <= 1; vertical++){
+            printf("Baixo\n");
+        }
+        printf("Esquerda\n");
+    }
+    
     return 0;
 }
